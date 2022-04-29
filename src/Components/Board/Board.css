@@ -1,0 +1,42 @@
+.Board {
+  border: solid 1em rgb(22, 22, 22);
+  border-right-color: red;
+  border-radius: 20px;
+  width: 300px;
+  padding: 50px;
+  margin: 20px;
+  justify-content:space-around
+}
+.postname {
+  border: solid 0.5em rgb(57, 55, 55);
+  background-color: brown;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  color: rgb(248, 239, 239);
+  background-color: #5c2a07;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #1f211f}
+
+.button:active {
+  background-color: #89452e;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.buttonRemove {
+  background-color: #4CAF50; /* Green */
+}
+

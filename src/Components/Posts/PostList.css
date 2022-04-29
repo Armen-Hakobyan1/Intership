@@ -1,0 +1,50 @@
+.postsDashboard {
+  display:block;
+  border: solid 1em rgb(22, 22, 22);
+  border-left-color: red;
+  border-radius: 20px;
+  margin: 20px;
+}
+.red {
+  color: red;
+}
+.posts {
+  display:flex;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+.comments {
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.postList {
+  display: table-row;
+}
+
+ul {
+  list-style: none;
+  font-family: 'Marck Script', cursive;
+}
+
+ul li {
+  margin: 5px;
+  /* border-bottom: 2px #404B51 dotted; */
+  font-size: 20px;
+  line-height: 1;
+}
+
+ul li span:nth-child(odd) {
+  padding: 6px;
+  color: #404B51;
+}
+
+ul li span:nth-child(even) {
+  float: right;
+  padding: 6px;
+  color: #fff;
+}
+
+ul span {
+  position: relative;
+  bottom: -7px;
+}
