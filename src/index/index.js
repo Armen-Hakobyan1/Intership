@@ -1,5 +1,5 @@
 export const posts = [
-  {
+ {
     postName: "Post one",
     id: 1,
     disabled: false,
@@ -7,7 +7,7 @@ export const posts = [
       {
         content: "Hello World",
         id: 1,
-        rate: 10,
+        rate: 102,
         index: 1
       },
       {
@@ -50,7 +50,7 @@ export const posts = [
       {
         content: "A post is an entry in a blog",
         id: 2,
-        rate: 5,
+        rate: 50,
         index: 3
       },
       {
@@ -75,7 +75,7 @@ export const posts = [
       {
         content: "some comment two",
         id: 45,
-        rate: 13,
+        rate: 131,
         index: 13
       },
       {
@@ -112,7 +112,7 @@ export const posts = [
       {
         content: "some comment three",
         id: 29,
-        rate: 5,
+        rate: 57,
         index: 3
       },
       {
@@ -143,7 +143,7 @@ export const posts = [
       {
         content: "some comment three",
         id: 52,
-        rate: 5,
+        rate: 54,
         index: 3
       },
       {
@@ -153,5 +153,129 @@ export const posts = [
         index: 4
       },
     ]
-  }
+  },
+  {
+    postName: "Post six",
+    id: 6,
+    disabled: false,
+    comments: [
+      {
+        content: "Hello World",
+        id: 1,
+        rate: 10,
+        index: 1
+      },
+      {
+        content: "Post is a expression of a thought perspective",
+        id: 1,
+        rate: 5,
+        index: 2
+      },
+      {
+        content: "Comment is a 'reaction' in favor or against that view",
+        id: 1,
+        rate: 16,
+        index: 3
+      },
+      {
+        content: "A comment is an answer to a question",
+        id: 1,
+        rate: 38,
+        index: 4
+      }
+    ]
+  },
+  {
+    postName: "Post seven",
+    id: 7,
+    disabled: false,
+    comments: [
+      {
+        content: "Hello World",
+        id: 1,
+        rate: 10,
+        index: 1
+      },
+      {
+        content: "Post is a expression of a thought perspective",
+        id: 1,
+        rate: 5,
+        index: 2
+      },
+      {
+        content: "Comment is a 'reaction' in favor or against that view",
+        id: 1,
+        rate: 16,
+        index: 3
+      },
+      {
+        content: "A comment is an answer to a question",
+        id: 1,
+        rate: 89,
+        index: 4
+      }
+    ]
+  },
+  {
+    postName: "Post eight",
+    id: 8,
+    disabled: false,
+    comments: [
+      {
+        content: "Hello World",
+        id: 1,
+        rate: 10,
+        index: 1
+      },
+      {
+        content: "Post is a expression of a thought perspective",
+        id: 1,
+        rate: 5,
+        index: 2
+      },
+      {
+        content: "Comment is a 'reaction' in favor or against that view",
+        id: 1,
+        rate: 163,
+        index: 3
+      },
+      {
+        content: "A comment is an answer to a question",
+        id: 1,
+        rate: 8,
+        index: 4
+      }
+    ]
+  },
+  {
+    postName: "Post nine",
+    id: 9 ,
+    disabled: false,
+    comments: [
+      {
+        content: "Hello World",
+        id: 1,
+        rate: 10,
+        index: 1
+      },
+      {
+        content: "Post is a expression of a thought perspective",
+        id: 1,
+        rate: 5,
+        index: 2
+      },
+      {
+        content: "Comment is a 'reaction' in favor or against that view",
+        id: 1,
+        rate: 162,
+        index: 3
+      },
+      {
+        content: "A comment is an answer to a question",
+        id: 1,
+        rate: 81,
+        index: 4
+      }
+    ]
+  },
 ];

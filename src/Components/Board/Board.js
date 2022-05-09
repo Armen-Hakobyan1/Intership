@@ -6,17 +6,17 @@ class Board extends React.Component {
     super(props);
     this.state = {
       board: [],
-    }
+    };
   };
 
-  addMaxRatePost = () => {
+  addMaxRatePost = (maxRatePosts) => {
     const maxRatePostDetails = this.props.findPostWithMaxRate();
 
     const enabledPosts = this.props.posts.map((post) => {
       if (post?.id === maxRatePostDetails.postId) {
         post.disabled = true;
         post.maxRate = maxRatePostDetails.maxRate;
-        this.state.board.push(post);
+        maxRatePosts.push(post);
       };
       return post;
     });
@@ -24,40 +24,37 @@ class Board extends React.Component {
     this.props.changePosts(enabledPosts);
 
     this.setState({
-      board: this.state.board
-    })
-  };
-
-  removePost = (postId) => {
-    this.setState({
-      board: this.state.board.filter(function (post) {
-        return post.id !== postId;
-      })
+      board: maxRatePosts
     });
-
-    const enabledPosts = this.props.enabledPosts(postId);
-
-    this.props.changePosts(enabledPosts);
   };
 
-  changeOrder = () => {
-    this.state.board.reverse();
+  removePost = (postId, maxRatePosts) => {
+    const enabledPosts = this.props.enabledPosts(postId);
+    this.props.changePosts(enabledPosts);
+
     this.setState({
-      board: this.state.board
+      board: maxRatePosts.filter((post) => postId !== post.id),
+    });
+  };
+
+  changeOrder = (maxRatePosts) => {
+    this.setState({
+      board: maxRatePosts.reverse(),
     });
   }
 
   render() {
+    const maxRatePosts = [ ...this.state.board];
     return (
       <div className="Board">
-        <button className="button" onClick={this.addMaxRatePost}>Add</button>
+        <button className="button" onClick={() => this.addMaxRatePost(maxRatePosts)}>Add</button>
         <span> </span>
-        <button className = "button" onClick={this.changeOrder}>Assort</button>
+        <button className = "button" onClick={() => this.changeOrder(maxRatePosts)}>Assort</button>
         <div>{this.state.board.map((post, index) => {
           return (
             <div className="postname" key={index}>
               {post.postName}<br></br>Rate:{post.maxRate / 4}
-               <button className="buttunRemove" onClick={() => this.removePost(post.id)}>
+               <button className="buttunRemove" onClick={() => this.removePost(post.id, maxRatePosts)}>
                 X
               </button>
             </div>

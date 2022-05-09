@@ -1,0 +1,11 @@
+.pagination {
+  display:flex;
+  justify-content:start;
+}
+.page-item1 {
+  border: 10px solid;
+  background-color: coral;
+  border-radius: 5px;
+  width: calc(10%);
+}
+

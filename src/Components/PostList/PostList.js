@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { posts } from "../../index/index.js";
 import Board from "../Board/Board.js";
-import PostsPage from "../PostsPage/PostsPage.js";
+import PostsPage from "../Posts/Posts.js";
 import './PostList.css';
 
-class Postlist extends Component {
+class PostList extends Component {
   constructor() {
     super();
-    this.state = {
+      this.state = {
       posts: posts,
     }
   }
@@ -50,7 +50,9 @@ class Postlist extends Component {
     return (
       <div className="posts">
         <div className="postList">
-          <PostsPage posts={this.state.posts}/>
+          <PostsPage
+            posts={this.state.posts}
+          />
         </div>
         <Board
           posts={this.state.posts}
@@ -69,4 +71,4 @@ class Postlist extends Component {
   }
 };
 
-export default Postlist;
+export default PostList;

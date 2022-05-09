@@ -1,0 +1,10 @@
+.input {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  width: auto;
+  height: 35px;
+  border: 10px solid;
+  background-color: coral;
+  border-radius: 5px;
+}
